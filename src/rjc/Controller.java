@@ -4,11 +4,13 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
 
+import java.io.IOException;
+
 public class Controller {
     @FXML private TextArea textArea;
 
     @FXML protected void handleNewButtonAction(ActionEvent event) {textArea.setText("");}
-    @FXML protected void handleOpenButtonAction(ActionEvent event) {}
+    @FXML protected void handleOpenButtonAction(ActionEvent event) throws IOException {FileManager.fileOpenDialog();}
     @FXML protected void handleSaveButtonAction(ActionEvent event) {}
     @FXML protected void handleSaveAsButtonAction(ActionEvent event) {}
     @FXML protected void handlePageSetupButtonAction(ActionEvent event) {}

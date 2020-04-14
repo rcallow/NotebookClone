@@ -19,18 +19,18 @@
             <MenuBar HBox.hgrow="ALWAYS">
                 <Menu text="File">
                     <MenuItem text="New" onAction="#handleNewButtonAction"/>
-            <!--        <MenuItem text="Open" onAction="handleOpenButtonAction(event);"/>
-                    <MenuItem text="Save" onAction="handleSaveButtonAction(event);"/>
-                    <MenuItem text="Save As" onAction="handleSaveAsButtonAction(event);"/>
-                    <MenuItem text="Page Setup..." onAction="handlePageSetupButtonAction(event);"/>
-                    <MenuItem text="Print..." onAction="handlePrintButtonAction(event);"/>
-                    <MenuItem text="Exit" onAction="handleExitButtonAction(event);"/> !-->
+                    <MenuItem text="Open" onAction="#handleOpenButtonAction"/>
+                    <MenuItem text="Save" onAction="#handleSaveButtonAction"/>
+                    <MenuItem text="Save As" onAction="#handleSaveAsButtonAction"/>
+                    <MenuItem text="Page Setup..." onAction="#handlePageSetupButtonAction"/>
+                    <MenuItem text="Print..." onAction="#handlePrintButtonAction"/>
+                    <MenuItem text="Exit" onAction="#handleExitButtonAction"/>
                 </Menu>
                 <Menu text="Edit">
-               <!--     <MenuItem text="Undo" onAction="handleUndoButtonAction(event);"/>
-                    <MenuItem text="Cut" onAction="handleCutButtonAction(event);"/>
-                    <MenuItem text="Copy" onAction="handleCopyButtonAction(event);"/>
-                    <MenuItem text="Paste" onAction="handlePasteButtonAction(event);"/> !-->
+                    <MenuItem text="Undo" onAction="#handleUndoButtonAction"/>
+                    <MenuItem text="Cut" onAction="#handleCutButtonAction"/>
+                    <MenuItem text="Copy" onAction="#handleCopyButtonAction"/>
+                    <MenuItem text="Paste" onAction="#handlePasteButtonAction"/>
                 </Menu>
                 <Menu text="Format"/>
                 <Menu text="View"/>

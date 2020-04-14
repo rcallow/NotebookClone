@@ -24,9 +24,12 @@ public class Main extends Application {
         Scene scene = new Scene(root, 500, 500);
         stage.setScene(scene);
         scene.getStylesheets().add(Main.class.getResource("Main.css").toExternalForm());
-
+        FileManager.FileManager(stage);
         stage.show();
     }
+
+
+
 
 
 }
