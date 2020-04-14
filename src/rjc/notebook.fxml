@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?language javascript?>
+<!-- <?language javascript?> !-->
 
 <?import java.net.*?>
 <?import javafx.geometry.*?>
@@ -12,25 +12,25 @@
 <BorderPane fx:controller="rjc.Controller" xmlns:fx="http://javafx.com/fxml"
             styleClass="root">
     <padding><Insets top="1" right="1" bottom="1" left="1"/></padding>
-    <fx:script source="notebook.js"/>
+  <!--  <fx:script source="Controller.java"/> !-->
 
     <top>
         <HBox spacing="0">
             <MenuBar HBox.hgrow="ALWAYS">
                 <Menu text="File">
-                    <MenuItem text="New" onAction="handleNewButtonAction(event);"/>
-                    <MenuItem text="Open" onAction="handleOpenButtonAction(event);"/>
+                    <MenuItem text="New" onAction="#handleNewButtonAction"/>
+            <!--        <MenuItem text="Open" onAction="handleOpenButtonAction(event);"/>
                     <MenuItem text="Save" onAction="handleSaveButtonAction(event);"/>
                     <MenuItem text="Save As" onAction="handleSaveAsButtonAction(event);"/>
                     <MenuItem text="Page Setup..." onAction="handlePageSetupButtonAction(event);"/>
                     <MenuItem text="Print..." onAction="handlePrintButtonAction(event);"/>
-                    <MenuItem text="Exit" onAction="handleExitButtonAction(event);"/>
+                    <MenuItem text="Exit" onAction="handleExitButtonAction(event);"/> !-->
                 </Menu>
                 <Menu text="Edit">
-                    <MenuItem text="Undo" onAction="handleUndoButtonAction(event);"/>
+               <!--     <MenuItem text="Undo" onAction="handleUndoButtonAction(event);"/>
                     <MenuItem text="Cut" onAction="handleCutButtonAction(event);"/>
                     <MenuItem text="Copy" onAction="handleCopyButtonAction(event);"/>
-                    <MenuItem text="Paste" onAction="handlePasteButtonAction(event);"/>
+                    <MenuItem text="Paste" onAction="handlePasteButtonAction(event);"/> !-->
                 </Menu>
                 <Menu text="Format"/>
                 <Menu text="View"/>
