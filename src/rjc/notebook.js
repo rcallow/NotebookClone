@@ -1,7 +1,7 @@
 function handleSubmitButtonAction() {
                  actiontarget.setText("Calling the JavaScript");
              }
-function handleNewButtonAction() {actiontarget.setText("Calling JavaScript");}
+function handleNewButtonAction() {textArea.setText("");}
 function handleOpenButtonAction() {actiontarget.setText("Calling JavaScript");}
 function handleSaveButtonAction() {actiontarget.setText("Calling JavaScript");}
 function handleSaveAsButtonAction() {actiontarget.setText("Calling JavaScript");}

@@ -43,7 +43,7 @@
     <center>
         <HBox fillHeight="true" BorderPane.alignment="CENTER">
             <padding><Insets top="1" right="1" bottom="1" left="1"/></padding>
-            <TextArea HBox.hgrow="SOMETIMES" VBox.vgrow="ALWAYS"/>
+            <TextArea fx:id="textArea" HBox.hgrow="SOMETIMES" VBox.vgrow="ALWAYS"/>
 
         </HBox>
     </center>
