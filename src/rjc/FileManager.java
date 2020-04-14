@@ -11,10 +11,10 @@ import java.net.URI;
 
 public class FileManager
 {
-    private static Stage stage2;
+    private static Stage stageLocal;
 
     public static void FileManager(Stage stage){
-        stage2 = stage;
+        stageLocal = stage;
     }
 
     public static void fileOpenDialog() throws IOException {
@@ -22,7 +22,7 @@ public class FileManager
         FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("Text files (*.txt)", "*.txt");
         fileChooser.getExtensionFilters().add(extFilter);
 
-        fileChooser.showOpenDialog(stage2);
+        fileChooser.showOpenDialog(stageLocal);
         }
     }
 
