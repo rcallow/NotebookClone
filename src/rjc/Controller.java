@@ -13,10 +13,15 @@ public class Controller {
     @FXML protected void handleOpenButtonAction(ActionEvent event) throws IOException {
         textArea.setText(FileManager.fileOpenDialog());
     }
-    @FXML protected void handleSaveButtonAction(ActionEvent event) {}
-    @FXML protected void handleSaveAsButtonAction(ActionEvent event) throws IOException {FileManager.fileSaveAsDialog(textArea.getText());}
+    @FXML protected void handleSaveButtonAction(ActionEvent event) throws IOException {
+        FileManager.fileSave(textArea.getText());
+    }
+    @FXML protected void handleSaveAsButtonAction(ActionEvent event) throws IOException {
+        FileManager.fileSaveAsDialog();
+        FileManager.fileSave(textArea.getText());
+    }
     @FXML protected void handlePageSetupButtonAction(ActionEvent event) {}
-    @FXML protected void handlePrintButtonAction(ActionEvent event) {}
+    @FXML protected void handlePrintButtonAction(ActionEvent event) {FileManager.printer(textArea);}
     @FXML protected void handleExitButtonAction(ActionEvent event) {}
 
     @FXML protected void handleUndoButtonAction(ActionEvent event) {}

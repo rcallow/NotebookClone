@@ -1,12 +1,13 @@
 package rjc;
 
+import javafx.print.PrinterJob;
+import javafx.scene.control.TextArea;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-
 import java.io.File;
 import java.io.IOException;
-import java.net.URI;
 import java.nio.file.Files;
+import java.awt.Desktop;
 
 
 public class FileManager
@@ -36,10 +37,25 @@ public class FileManager
 
     }
 
-    public static void fileSaveAsDialog(CharSequence text) throws IOException {
+    public static void fileSaveAsDialog() throws IOException {
         file = fileChooser.showSaveDialog(stageLocal);
+    }
+
+    public static void fileSave(CharSequence text) throws IOException {
         if (file != null){
             Files.writeString(file.toPath(), text);
+        }
+    }
+
+    public static void printer(TextArea textArea){
+        System.out.print(textArea.getText());
+        PrinterJob printerJob = PrinterJob.createPrinterJob();
+        boolean printable = printerJob.showPrintDialog(stageLocal);
+        if (printable){
+            boolean printed = printerJob.printPage(textArea);
+            if(printed){
+                printerJob.endJob();
+            }
         }
     }
 }

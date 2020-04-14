@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- <?language javascript?> !-->
 
 <?import java.net.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.Group?>
+
 
 
 <BorderPane fx:controller="rjc.Controller" xmlns:fx="http://javafx.com/fxml"
             styleClass="root">
     <padding><Insets top="1" right="1" bottom="1" left="1"/></padding>
-  <!--  <fx:script source="Controller.java"/> !-->
 
     <top>
         <HBox spacing="0">
@@ -39,7 +36,6 @@
         </HBox>
     </top>
 
-    <!--  <Text fx:id="actiontarget"/> !-->
     <center>
         <HBox fillHeight="true" BorderPane.alignment="CENTER">
             <padding><Insets top="1" right="1" bottom="1" left="1"/></padding>
