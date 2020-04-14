@@ -12,7 +12,7 @@ public class Controller {
     @FXML protected void handleNewButtonAction(ActionEvent event) {textArea.setText("");}
     @FXML protected void handleOpenButtonAction(ActionEvent event) {FileManager.fileOpenDialog();}
     @FXML protected void handleSaveButtonAction(ActionEvent event) {}
-    @FXML protected void handleSaveAsButtonAction(ActionEvent event) {}
+    @FXML protected void handleSaveAsButtonAction(ActionEvent event) {FileManager.fileSaveAsDialog();}
     @FXML protected void handlePageSetupButtonAction(ActionEvent event) {}
     @FXML protected void handlePrintButtonAction(ActionEvent event) {}
     @FXML protected void handleExitButtonAction(ActionEvent event) {}

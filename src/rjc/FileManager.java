@@ -26,7 +26,9 @@ public class FileManager
         fileChooser.showOpenDialog(stageLocal);
     }
 
-    public static void fileSaveAsDialog(){}
+    public static void fileSaveAsDialog(){
+        fileChooser.showSaveDialog(stageLocal);
+    }
 }
 
 
